@@ -31,6 +31,7 @@ group :test, :development do
   gem 'timecop', '~> 0.7.0'
   gem 'pry-rails', '~> 0.3.2'
   gem 'capistrano', '~>2.15.5'
-  gem 'cucumber-rails', :require => false
   gem 'database_cleaner'
+  gem 'webrat', '~>0.7.3'
+  gem 'cucumber-rails', :require => false
 end
