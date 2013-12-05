@@ -20,6 +20,7 @@ describe Tarefa do
   context 'atributos obrigatórios' do
   	it { should validate_presence_of :nome}
   	it { should validate_presence_of :descricao}
+  	it { should validate_presence_of :projeto}
   end
 
 end
