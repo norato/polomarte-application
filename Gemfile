@@ -34,4 +34,5 @@ group :test, :development do
   gem 'database_cleaner'
   gem 'webrat', '~>0.7.3'
   gem 'cucumber-rails', :require => false
+  gem 'shoulda-matchers'
 end
