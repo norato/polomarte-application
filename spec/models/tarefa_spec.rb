@@ -8,4 +8,9 @@ describe Tarefa do
   	tarefa.nome.should == "Configurar o ambiente de desenvolvimento"
   	tarefa.descricao.should == "Serão instadas as gems de teste e desenvolvimento."
   end
+  it 'deve pertencer a um Projeto' do
+  	projeto = create(:projeto)
+  	tarefa = create(:tarefa, projeto: projeto)
+  	tarefa.projeto_pai.should == projeto
+  end
 end
