@@ -11,10 +11,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131205021531) do
+ActiveRecord::Schema.define(version: 20131205022719) do
 
   create_table "projetos", force: true do |t|
     t.string   "nome"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "tarefas", force: true do |t|
+    t.string   "nome"
+    t.string   "descricao"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
